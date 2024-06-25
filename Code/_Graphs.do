@@ -1,0 +1,155 @@
+clear all
+set more off
+cd "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Data"
+
+***STEP1:Preprocess Prosumers***
+***Transform CBS data from csv. to dta. format***
+clear all
+import delimited "Prosumers.csv"
+describe
+drop if pv_numb == .
+rename _id _ID
+sort _ID
+save "Prosumers.dta", replace
+
+***Data cleaning: clean nonnumeric characters***
+foreach var in price_gas owned_share single_share emission {
+    replace `var' = subinstr(`var', ",", ".", .)
+    destring `var', replace
+}
+
+***Explore data***
+describe
+
+asdoc sum, save(/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/sumstattable)
+
+asdoc pwcorr density emission income_av higheduc_rate unemploym price_electr consump_electr housing_stock owned_share single_share, star(0.05) save(/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/pwcorr_results.doc)
+
+
+***Declare panel data settings****
+xtset _ID year 
+
+***Explore data: preparation for the transformation****
+*** Generate histograms and save each graph ***
+****HISTOGRAMS*****
+*** List of variables ***
+local varlist pv_numb density emission income_av higheduc_rate unemploym price_electr consump_electr housing_stock owned_share single_share
+
+*** Generate histograms and save each graph ***
+foreach var of local varlist {
+    histogram `var', name(hist_`var') title("`var'") color(navy)
+}
+
+*** Combine all histograms into one graph ***
+graph combine hist_pv_numb hist_density hist_emission hist_income_av hist_higheduc_rate hist_unemploym hist_price_electr hist_consump_electr hist_housing_stock hist_owned_share hist_single_share, col(3) 
+
+---------------------------------------------
+****HISTOGRAMS_1*****
+*** LOG_TRANSFORMED AND Z-SCORE VARIABLES ***
+
+*** Generate log transformations ***
+local log_vars pv_numb density emission
+foreach var in `log_vars' {
+    gen ln_`var' = ln(`var')
+}
+
+*** Data normalization: z-score standardization of variables ***
+local z_vars income_av higheduc_rate unemploym price_electr consump_electr housing_stock owned_share single_share
+foreach var of local z_vars {
+    summarize `var'
+    local mean_`var' = r(mean)
+    local sd_`var' = r(sd)
+    gen z_`var' = (`var' - `mean_`var'') / `sd_`var''
+}
+
+*** Generate histograms for log-transformed variables and save each graph ***
+foreach var in `log_vars' {
+    histogram ln_`var', name(hist_ln_`var') title("ln(`var')")
+}
+
+*** Generate histograms for z-score standardized variables and save each graph ***
+foreach var of local z_vars {
+    histogram z_`var', name(hist_z_`var') title("z(`var')")
+}
+
+*** Combine all histograms into one graph ***
+graph combine hist_ln_pv_numb hist_ln_density hist_ln_emission hist_z_income_av hist_z_higheduc_rate hist_z_unemploym hist_z_price_electr hist_z_consump_electr hist_z_housing_stock hist_z_owned_share hist_z_single_share, col(3)
+
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/hist_ln.png", replace
+
+------------------------------------
+****HISTOGRAMS_2*****
+*** Z-SCORED DATA ***
+*** Data normalization: z-score standardization of variables ***
+local varlist pv_numb density emission income_av higheduc_rate unemploym price_electr consump_electr housing_stock owned_share single_share
+foreach var of local varlist {
+    summarize `var'
+    local mean_`var' = r(mean)
+    local sd_`var' = r(sd)
+    gen z_`var' = (`var' - `mean_`var'') / `sd_`var''
+}
+
+*** Generate histograms for z-score standardized variables and save each graph ***
+foreach var of local varlist {
+    histogram z_`var', name(hist_z_`var') title("z(`var')")
+}
+
+*** Combine all histograms into one graph ***
+graph combine hist_z_pv_numb hist_z_density hist_z_emission hist_z_income_av hist_z_higheduc_rate hist_z_unemploym hist_z_price_electr hist_z_consump_electr hist_z_housing_stock hist_z_owned_share hist_z_single_share, col(3)
+
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/hist_z.png", replace
+---------------------------------------
+
+clear all
+set more off
+cd "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Data"
+
+***Merge data*** 
+use "Prosumers.dta", clear
+xtset _ID year
+spbalance
+merge m:1 _ID using "netherlands_provinces-polygon.dta", keep(match)
+
+save "Merged_Prosumers_Provincies.dta", replace
+drop cartodb_id
+
+spset
+xtset
+
+***Data cleaning: clean nonnumeric characters***
+foreach var in price_gas owned_share single_share emission {
+    replace `var' = subinstr(`var', ",", ".", .)
+    destring `var', replace
+}
+
+*** Preparation of panel data****
+***Verify that _ID and year jointly identify the observations
+assert _ID!=.
+assert year!=.
+bysort _ID year: assert _N==1
+
+***xtset the data and verify that coordinates (_CX and _CY) are constant within panel
+xtset _ID year
+bysort _ID (year): assert _CX == _CX[1]
+bysort _ID (year): assert _CY == _CY[1]
+
+
+***Draw and save choropleth maps***
+grmap pv_numb, t(2013) legend(on position(11) title("Legend"))
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/pv_installations_map_2013.png", replace
+grmap pv_numb, t(2017) legend(on position(11) title("Legend"))
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/pv_installations_map_2013.png", replace
+grmap pv_numb, t(2022) legend(on position(11) title("Legend"))
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/pv_installations_map_2022.png", replace
+
+***Additional VISUALS***
+graph bar pv_numb, over(provinces, label(angle(90) labsize(small))) bar(1, color(navy))
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/pv_bar.png", replace
+
+xtline pv_numb, overlay legend(label(1 "Groningen") label(2 "Friesland") label(3 "Drenthe") label(4 "Overijssel") label(5 "Flevoland") label(6 "Gerderland") label(7 "Utrecht") label(8 "North Holland") label(9 "South Holland") label(10 "Zeeland") label(11 "North Brabant") label(12 "Limburg"))
+graph export "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Pictures/pv_provinces.png", replace
+
+
+
+
+

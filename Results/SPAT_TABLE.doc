@@ -1,0 +1,110 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil ;}}
+{\info {\author Attaullah Shah}{\company IMSciences}{\title .}}
+\deflang1033\plain
+{\footer\pard\qc\plain\f0\chpgn\par}
+{
+{\b\qc\line  }{\par}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {Main                        }\line
+\fs20 {L.ln_pv_numb        0.750***}\line
+\fs20 {                  (12.87)   }\line
+\fs20 {L.Wln_pv_n~b       0.0147   }\line
+\fs20 {                   (0.13)   }\line
+\fs20 {z_income_av         0.173*  }\line
+\fs20 {                   (1.73)   }\line
+\fs20 {z_higheduc~e        0.235** }\line
+\fs20 {                   (2.27)   }\line
+\fs20 {z_unemploym       -0.0714***}\line
+\fs20 {                  (-2.79)   }\line
+\fs20 {z_consump_~r      -0.0127   }\line
+\fs20 {                  (-0.43)   }\line
+\fs20 {ln_housing~k       -0.515   }\line
+\fs20 {                  (-0.61)   }\line
+\fs20 {ln_emission        -0.122   }\line
+\fs20 {                  (-1.06)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { Wx                          }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { z_income_av        -0.146   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (-1.48)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { z_higheduc~e        0.231*  }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1.80)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_emission        -0.562** }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (-2.50)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {Spatial                     }\line
+\fs20 {rho                 0.153   }\line
+\fs20 {                   (1.23)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { Variance                    }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { sigma2_e          0.00300***}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (8.14)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {N                     108   }\line
+\fs20 {R-sq               0.5420   }\line
+\fs20 {adj. R-sq                   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { t statistics in parentheses}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { * p<0.10, ** p<0.05, *** p<0.01}\cell
+\row}
+
+
+\writepositionforappend
+}}

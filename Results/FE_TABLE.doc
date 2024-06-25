@@ -1,0 +1,304 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\b\qc\line  }{\par}
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)             (2)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb      ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {ln_density         -2.292*          0.730   }\line
+\fs20 {                  (-1.77)          (0.93)   }\line
+\fs20 {z_higheduc~e        1.204***       -0.129   }\line
+\fs20 {                   (7.21)         (-0.87)   }\line
+\fs20 {z_unemploym        -0.194***        0.110*  }\line
+\fs20 {                  (-4.03)          (1.91)   }\line
+\fs20 {z_consump_~r       -0.367***       -0.141** }\line
+\fs20 {                  (-6.81)         (-2.54)   }\line
+\fs20 {ln_housing~k        2.143           0.812   }\line
+\fs20 {                   (1.20)          (0.78)   }\line
+\fs20 {ln_emission        -0.400           0.128   }\line
+\fs20 {                  (-1.42)          (0.73)   }\line
+\fs20 {2013.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {2014.year                           0.341***}\line
+\fs20 {                                   (7.65)   }\line
+\fs20 {2015.year                           0.708***}\line
+\fs20 {                                  (11.09)   }\line
+\fs20 {2016.year                           0.988***}\line
+\fs20 {                                  (10.97)   }\line
+\fs20 {2017.year                           1.320***}\line
+\fs20 {                                  (10.38)   }\line
+\fs20 {2018.year                           1.644***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2019.year                           1.917***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2020.year                           2.191***}\line
+\fs20 {                                  (10.94)   }\line
+\fs20 {2021.year                           2.498***}\line
+\fs20 {                                  (11.34)   }\line
+\fs20 {2022.year                           2.724***}\line
+\fs20 {                                  (10.53)   }\line
+\fs20 {_cons               0.140          -6.975   }\line
+\fs20 {                   (0.01)         (-0.47)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { N                     120             120   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {t statistics in parentheses}\line
+\fs20 {* p<0.10, ** p<0.05, *** p<0.01}\line
+
+{\b\qc\line  }{\par}
+\fs20 {(tabulating estimates stored by eststo; specify "." to tabulate the active results)}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)             (2)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb      ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {ln_density         -2.292*          0.730   }\line
+\fs20 {                  (-1.77)          (0.93)   }\line
+\fs20 {z_higheduc~e        1.204***       -0.129   }\line
+\fs20 {                   (7.21)         (-0.87)   }\line
+\fs20 {z_unemploym        -0.194***        0.110*  }\line
+\fs20 {                  (-4.03)          (1.91)   }\line
+\fs20 {z_consump_~r       -0.367***       -0.141** }\line
+\fs20 {                  (-6.81)         (-2.54)   }\line
+\fs20 {ln_housing~k        2.143           0.812   }\line
+\fs20 {                   (1.20)          (0.78)   }\line
+\fs20 {ln_emission        -0.400           0.128   }\line
+\fs20 {                  (-1.42)          (0.73)   }\line
+\fs20 {2013.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {2014.year                           0.341***}\line
+\fs20 {                                   (7.65)   }\line
+\fs20 {2015.year                           0.708***}\line
+\fs20 {                                  (11.09)   }\line
+\fs20 {2016.year                           0.988***}\line
+\fs20 {                                  (10.97)   }\line
+\fs20 {2017.year                           1.320***}\line
+\fs20 {                                  (10.38)   }\line
+\fs20 {2018.year                           1.644***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2019.year                           1.917***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2020.year                           2.191***}\line
+\fs20 {                                  (10.94)   }\line
+\fs20 {2021.year                           2.498***}\line
+\fs20 {                                  (11.34)   }\line
+\fs20 {2022.year                           2.724***}\line
+\fs20 {                                  (10.53)   }\line
+\fs20 {_cons               0.140          -6.975   }\line
+\fs20 {                   (0.01)         (-0.47)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { N                     120             120   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {t statistics in parentheses}\line
+\fs20 {* p<0.10, ** p<0.05, *** p<0.01}\line
+
+{\b\qc\line  }{\par}
+\fs20 {(tabulating estimates stored by eststo; specify "." to tabulate the active results)}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)             (2)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb      ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {ln_density         -2.292*          0.730   }\line
+\fs20 {                  (-1.77)          (0.93)   }\line
+\fs20 {z_higheduc~e        1.204***       -0.129   }\line
+\fs20 {                   (7.21)         (-0.87)   }\line
+\fs20 {z_unemploym        -0.194***        0.110*  }\line
+\fs20 {                  (-4.03)          (1.91)   }\line
+\fs20 {z_consump_~r       -0.367***       -0.141** }\line
+\fs20 {                  (-6.81)         (-2.54)   }\line
+\fs20 {ln_housing~k        2.143           0.812   }\line
+\fs20 {                   (1.20)          (0.78)   }\line
+\fs20 {ln_emission        -0.400           0.128   }\line
+\fs20 {                  (-1.42)          (0.73)   }\line
+\fs20 {2013.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {2014.year                           0.341***}\line
+\fs20 {                                   (7.65)   }\line
+\fs20 {2015.year                           0.708***}\line
+\fs20 {                                  (11.09)   }\line
+\fs20 {2016.year                           0.988***}\line
+\fs20 {                                  (10.97)   }\line
+\fs20 {2017.year                           1.320***}\line
+\fs20 {                                  (10.38)   }\line
+\fs20 {2018.year                           1.644***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2019.year                           1.917***}\line
+\fs20 {                                   (9.60)   }\line
+\fs20 {2020.year                           2.191***}\line
+\fs20 {                                  (10.94)   }\line
+\fs20 {2021.year                           2.498***}\line
+\fs20 {                                  (11.34)   }\line
+\fs20 {2022.year                           2.724***}\line
+\fs20 {                                  (10.53)   }\line
+\fs20 {_cons               0.140          -6.975   }\line
+\fs20 {                   (0.01)         (-0.47)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { N                     120             120   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {t statistics in parentheses}\line
+\fs20 {* p<0.10, ** p<0.05, *** p<0.01}\line
+
+{\b\qc\line  }{\par}
+\fs20 {(tabulating estimates stored by eststo; specify "." to tabulate the active results)}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)             (2)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb      ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {z_income_av         0.169**       -0.0362   }\line
+\fs20 {                   (2.18)         (-0.25)   }\line
+\fs20 {z_higheduc~e        0.900***      -0.0543   }\line
+\fs20 {                   (5.11)         (-0.37)   }\line
+\fs20 {z_unemploym        -0.138***       0.0902*  }\line
+\fs20 {                  (-2.96)          (1.68)   }\line
+\fs20 {z_price_el~r      -0.0568***       -0.926***}\line
+\fs20 {                  (-2.77)         (-7.08)   }\line
+\fs20 {z_consump_~r       -0.417***       -0.136** }\line
+\fs20 {                  (-8.35)         (-2.45)   }\line
+\fs20 {ln_housing~k       -0.802           0.977   }\line
+\fs20 {                  (-0.44)          (0.77)   }\line
+\fs20 {ln_emission      -0.00973           0.104   }\line
+\fs20 {                  (-0.04)          (0.58)   }\line
+\fs20 {2013.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {2014.year                          0.0938** }\line
+\fs20 {                                   (2.26)   }\line
+\fs20 {2015.year                           0.769***}\line
+\fs20 {                                  (10.13)   }\line
+\fs20 {2016.year                          0.0259   }\line
+\fs20 {                                   (0.48)   }\line
+\fs20 {2017.year                           0.223***}\line
+\fs20 {                                   (4.95)   }\line
+\fs20 {2018.year                           0.884***}\line
+\fs20 {                                   (8.70)   }\line
+\fs20 {2019.year                           2.382***}\line
+\fs20 {                                   (7.39)   }\line
+\fs20 {2020.year                           0.640***}\line
+\fs20 {                                  (10.67)   }\line
+\fs20 {2021.year                           0.755***}\line
+\fs20 {                                   (9.99)   }\line
+\fs20 {2022.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {_cons               21.28          -3.650   }\line
+\fs20 {                   (0.89)         (-0.22)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { N                     120             120   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {t statistics in parentheses}\line
+\fs20 {* p<0.10, ** p<0.05, *** p<0.01}\line
+
+{\b\qc\line  }{\par}
+\fs20 {(tabulating estimates stored by eststo; specify "." to tabulate the active results)}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { (1)             (2)   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { ln_pv_numb      ln_pv_numb   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {z_income_av         0.250***      -0.0362   }\line
+\fs20 {                   (3.38)         (-0.25)   }\line
+\fs20 {z_higheduc~e        0.836***      -0.0543   }\line
+\fs20 {                   (4.64)         (-0.37)   }\line
+\fs20 {z_unemploym        -0.130***       0.0902*  }\line
+\fs20 {                  (-2.70)          (1.68)   }\line
+\fs20 {z_consump_~r       -0.399***       -0.136** }\line
+\fs20 {                  (-7.80)         (-2.45)   }\line
+\fs20 {ln_housing~k       -0.597           0.977   }\line
+\fs20 {                  (-0.32)          (0.77)   }\line
+\fs20 {ln_emission        -0.123           0.104   }\line
+\fs20 {                  (-0.44)          (0.58)   }\line
+\fs20 {2013.year                               0   }\line
+\fs20 {                                      (.)   }\line
+\fs20 {2014.year                           0.350***}\line
+\fs20 {                                   (5.66)   }\line
+\fs20 {2015.year                           0.705***}\line
+\fs20 {                                  (10.25)   }\line
+\fs20 {2016.year                           0.986***}\line
+\fs20 {                                   (8.90)   }\line
+\fs20 {2017.year                           1.312***}\line
+\fs20 {                                   (8.36)   }\line
+\fs20 {2018.year                           1.620***}\line
+\fs20 {                                   (8.50)   }\line
+\fs20 {2019.year                           1.902***}\line
+\fs20 {                                   (7.44)   }\line
+\fs20 {2020.year                           2.177***}\line
+\fs20 {                                   (8.31)   }\line
+\fs20 {2021.year                           2.484***}\line
+\fs20 {                                   (7.98)   }\line
+\fs20 {2022.year                           2.722***}\line
+\fs20 {                                   (7.08)   }\line
+\fs20 {_cons               19.64          -4.499   }\line
+\fs20 {                   (0.80)         (-0.27)   }\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\cellx3000
+\fs20\pard\intbl\ql { N                     120             120   }\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx3000\cell
+\row}
+\fs20 {t statistics in parentheses}\line
+\fs20 {* p<0.10, ** p<0.05, *** p<0.01}\line
+
+
+\writepositionforappend
+}}

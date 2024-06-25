@@ -1,0 +1,174 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{\b\qc\line  }{\par}
+\fs20 {Welcome to use this command to calculate the Moran's I}\line
+\fs20 {The results :}\line
+\fs20 {Moran's I (varname : emission)         Number of obs =    120}\line
+\fs20 {Group variable: _ID                 Number of groups =     12}\line
+\fs20 {Time variable: year                     Panel length =     10}\line
+{\par}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx1500
+\fs20\pard\intbl\ql { year }\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx2700
+\fs20\pard\intbl\ql { I}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx3900
+\fs20\pard\intbl\ql { E(I)}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx5100
+\fs20\pard\intbl\ql { Sd(I)}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx6300
+\fs20\pard\intbl\ql { Z}\cell
+\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs \cellx7500
+\fs20\pard\intbl\ql { P-value}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2013 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.244}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.176}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.903}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.057}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2014 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.226}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.175}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.812}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.070}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2015 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.207}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.173}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.720}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.085}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2016 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.197}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.174}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.660}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.097}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2017 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.186}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.174}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.596}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.110}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2018 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.175}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.174}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.529}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.126}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2019 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.164}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.174}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.459}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.144}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2020 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.208}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.171}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.749}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.080}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2021 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.168}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.172}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.500}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.134}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\cellx1500
+\fs20\pard\intbl\ql {2022 }\cell
+\cellx2700
+\fs20\pard\intbl\ql {    0.174}\cell
+\cellx3900
+\fs20\pard\intbl\ql {   -0.091}\cell
+\cellx5100
+\fs20\pard\intbl\ql {    0.173}\cell
+\cellx6300
+\fs20\pard\intbl\ql {    1.532}\cell
+\cellx7500
+\fs20\pard\intbl\ql {    0.125}\cell
+\row}
+{\trowd\trgaph108\trleft-108
+\clbrdrb\brdrw15\brdrs\cellx7500\cell
+\row}
+\fs20 {*2-tail test}\line
+
+
+\writepositionforappend
+}}
