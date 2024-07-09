@@ -170,6 +170,13 @@
 \qr {{2.9}}\cell
 \qr {{10.4}}\cell
 \row
+\ql { {price gas}}\cell
+\qr {{120}}\cell
+\qr {{.909}}\cell
+\qr {{.221}}\cell
+\qr {{.755}}\cell
+\qr {{1.519}}\cell
+\row
 \ql { {price electr}}\cell
 \qr {{120}}\cell
 \qr {{.163}}\cell
@@ -197,6 +204,27 @@
 \qr {{476904.52}}\cell
 \qr {{159496}}\cell
 \qr {{1724095}}\cell
+\row
+\ql { {owned share}}\cell
+\qr {{120}}\cell
+\qr {{59.348}}\cell
+\qr {{4.899}}\cell
+\qr {{49.496}}\cell
+\qr {{66.7}}\cell
+\row
+\ql { {single share}}\cell
+\qr {{120}}\cell
+\qr {{70.835}}\cell
+\qr {{11.184}}\cell
+\qr {{48.316}}\cell
+\qr {{83.222}}\cell
+\row
+\ql { {emission}}\cell
+\qr {{120}}\cell
+\qr {{14244.203}}\cell
+\qr {{11833.171}}\cell
+\qr {{2845.34}}\cell
+\qr {{46134.746}}\cell
 \row
 }
 {\trowd\trgaph108\trleft-108

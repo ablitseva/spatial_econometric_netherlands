@@ -1,0 +1,108 @@
+{\rtf1\ansi\deff0 {\fonttbl{\f0\fnil Garamond;}}
+{\info {\author .}{\company .}{\title .}}
+\deflang1033\plain\fs20
+{\footer\pard\qc\plain\f0\fs20\chpgn\par}
+{
+{
+{\b\qc\line Descriptive Statistics }{\par}
+\trowd\trgaph108\trleft-108\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx2400\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx3200\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx4600\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx6000\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx7400\clbrdrt\brdrw10\brdrs \clbrdrb\brdrw25\brdrs\cellx8800
+\ql { {Variable}}\cell
+\qr { {Obs}}\cell
+\qr { {Mean}}\cell
+\qr { {Std. Dev.}}\cell
+\qr { {Min}}\cell
+\qr { {Max}}\cell
+\row
+\trowd\trgaph108\trleft-108\cellx2400\cellx3200\cellx4600\cellx6000\cellx7400\cellx8800
+\ql { {year}}\cell
+\qr {{120}}\cell
+\qr {{2017.5}}\cell
+\qr {{2.884}}\cell
+\qr {{2013}}\cell
+\qr {{2022}}\cell
+\row
+\ql { { ID}}\cell
+\qr {{120}}\cell
+\qr {{6.5}}\cell
+\qr {{3.467}}\cell
+\qr {{1}}\cell
+\qr {{12}}\cell
+\row
+\ql { {pv numb}}\cell
+\qr {{120}}\cell
+\qr {{69039.175}}\cell
+\qr {{69487.489}}\cell
+\qr {{3994}}\cell
+\qr {{333321}}\cell
+\row
+\ql { {pv power}}\cell
+\qr {{120}}\cell
+\qr {{241132.17}}\cell
+\qr {{261965.59}}\cell
+\qr {{12422}}\cell
+\qr {{1404321}}\cell
+\row
+\ql { {income av}}\cell
+\qr {{120}}\cell
+\qr {{29.35}}\cell
+\qr {{3.311}}\cell
+\qr {{22.3}}\cell
+\qr {{37.9}}\cell
+\row
+\ql { {density}}\cell
+\qr {{120}}\cell
+\qr {{519.483}}\cell
+\qr {{363.247}}\cell
+\qr {{185}}\cell
+\qr {{1391}}\cell
+\row
+\ql { {higheduc rate}}\cell
+\qr {{120}}\cell
+\qr {{27.548}}\cell
+\qr {{4.847}}\cell
+\qr {{20.3}}\cell
+\qr {{40.6}}\cell
+\row
+\ql { {unemploym}}\cell
+\qr {{120}}\cell
+\qr {{5.915}}\cell
+\qr {{1.868}}\cell
+\qr {{2.9}}\cell
+\qr {{10.4}}\cell
+\row
+\ql { {price electr}}\cell
+\qr {{120}}\cell
+\qr {{.163}}\cell
+\qr {{.029}}\cell
+\qr {{.105}}\cell
+\qr {{.205}}\cell
+\row
+\ql { {consump gas}}\cell
+\qr {{120}}\cell
+\qr {{1281.5}}\cell
+\qr {{258.771}}\cell
+\qr {{670}}\cell
+\qr {{2050}}\cell
+\row
+\ql { {consump electr}}\cell
+\qr {{120}}\cell
+\qr {{2882.5}}\cell
+\qr {{247.676}}\cell
+\qr {{2430}}\cell
+\qr {{3450}}\cell
+\row
+\ql { {housing stock}}\cell
+\qr {{120}}\cell
+\qr {{644663.71}}\cell
+\qr {{476904.52}}\cell
+\qr {{159496}}\cell
+\qr {{1724095}}\cell
+\row
+}
+{\trowd\trgaph108\trleft-108
+\clbrdrt\brdrw15\brdrs\cellx8800{}\cell
+\row}
+
+
+\writepositionforappend
+}}

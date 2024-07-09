@@ -17,11 +17,6 @@ This thesis investigates the spatial and socio-economic factors influencing the 
 
 - Stata 18
 
-## Getting Started
-
-TODO:
-
-
 ## Contact
 
 For any questions or further information, please contact:

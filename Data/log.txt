@@ -1,0 +1,6 @@
+Warning 6: Field created_at create as date field, though DateTime requested.
+Warning 6: Field updated_at create as date field, though DateTime requested.
+Warning 6: Field created_at create as date field, though DateTime requested.
+Warning 6: Field updated_at create as date field, though DateTime requested.
+Warning 6: Field created_at create as date field, though DateTime requested.
+Warning 6: Field updated_at create as date field, though DateTime requested.

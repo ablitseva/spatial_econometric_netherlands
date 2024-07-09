@@ -129,17 +129,11 @@ eststo: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_elect
 ****MODEL 3: Spatial-Error model(SEM)
 eststo: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, emat(W) model(sem) fe type(ind) nolog
 
-
 ****MODEL 4: Spatial Durbin model (SDM)
 eststo: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, wmat(W) model(sdm) dlag(3) fe durbin(z_income_av z_higheduc_rate ln_emission) type(ind) nolog 
 
-eststo: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, wmat(W) model(sdm) dlag(3) fe durbin(z_income_av z_higheduc_rate ln_emission) type(ind) effects nolog 
-
 esttab, star(* 0.10 ** 0.05 *** 0.01)  r2(4) ar2(4)
 asdoc esttab, star(* 0.10 ** 0.05 *** 0.01) r2(4) ar2(4) se(4), save(/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/SPAT_TABLE)
-
-
-xsmle ln_pv_numb ln_density z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, wmat(W) ematrix(W) model(sac) fe type(both) nolog
 
 //Analysis SAR SDM SEM
 *** xsmle - A Command to Estimate Spatial Panel Models in Stata***
@@ -151,15 +145,3 @@ xsmle ln_pv_numb ln_density z_higheduc_rate z_unemploym z_consump_electr ln_hous
 ** nolog
 ***dlag(dlag) defines the structure of the spatiotemporal model. When dlag is equal to 1, only the time-lagged dependent variable is included; when dlag is equal to 2, only the space-time-lagged dependent variable is included; when dlag is equal to 3, both the time-lagged and space-time-lagged dependent variables are included.
 ///Wx:  changes in dependent variable affected by independent variable in neighbouring province. Example:  normalized_income_av= 1.888932, means that 1 Standard Deviation(std)  increase in income of neighbouring province leads to 1.888 std increase in numbers of PV.
-
-
-////The Likelihood Ratio (LR) test is a statistical test used to compare the goodness-of-fit of two nested models. 
-quietly: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, wmat(W) model(sar) fe dlag(3) type(ind) nolog
-estimates store null_model
-
-quietly: xsmle ln_pv_numb z_income_av z_higheduc_rate z_unemploym z_consump_electr ln_housing_stock ln_emission, wmat(W) model(sdm) dlag(3) fe durbin(z_income_av z_higheduc_rate ln_emission) type(ind) nolog
-estimates store alternative_model
-lrtest null_model alternative_model
-estat ic
-///The Akaike Information Criterion (AIC) and Bayesian Information Criterion (BIC) values for the alternative model.
-estat ic

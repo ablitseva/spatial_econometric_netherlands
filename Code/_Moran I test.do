@@ -19,22 +19,13 @@ bysort _ID (year): assert _CX == _CX[1]
 bysort _ID (year): assert _CY == _CY[1]
 
 spmatrix create contiguity W if year == 2013, normalize(row) replace
-///spmatrix create idistance W if year == 2013, normalize(row) replace
-
 spmatrix export W using "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.csv", replace
-
 import delimited "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.csv", clear delimiter(space)
-
 drop if v2==.
 drop v1
 save "/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix", replace
 
-// xtmoran pv_numb, wname("/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta")
-//
-// xtmoran density, wname("/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta")
-//
-// xtmoran consump_electr, wname("/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta")
-    
+
 use "Merged_Prosumers_Provincies.dta", replace
 
 ***Data cleaning: clean nonnumeric characters***
@@ -47,9 +38,6 @@ spmatrix dir
 spmatrix summarize W
 
 xtmoran pv_numb, wname("/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta") morani(2013 2014 2015 2016 2017 2018 2019 2020 2021 2022)
-
-spatgsa, spmatrix("/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta") model(lag error)
-------------------------------------------
 
 ***SAVE RESULTS - doc.**
 asdoc xtmoran pv_numb, wname(/Users/ablitseva/Documents/Stata/1_Thesis/6_STATA/Results/weights_matrix.dta) morani(2013 2014 2015 2016 2017 2018 2019 2020 2021 2022) save(XTMORANTEST)
